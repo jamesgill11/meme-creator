@@ -107,10 +107,6 @@ body {
   text-transform: uppercase;
 }
 
-.warning {
-  color: red;
-}
-
 @media (min-width: 600px) {
   .image__container {
     width: 50%;
