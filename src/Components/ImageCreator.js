@@ -54,8 +54,8 @@ const ImageCreator = () => {
       </form>
 
       <div className="image__container">
-        <img src={url} />
-        <img src={picture} />
+        <img src={url} alt="" />
+        <img src={picture} alt="" />
         <p className="upper__text">
           {upperWording}
           {upper}
