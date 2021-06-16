@@ -1,12 +1,21 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { MemeContext } from "../Context/MemeContext";
 
 const ImageCreator = () => {
-  const [url, setUrl] = useState("");
-  const [picture, setPicture] = useState("");
-  const [upperWording, setUpperWording] = useState("");
-  const [lowerWording, setLowerWording] = useState("");
-  const [upper, setUpper] = useState("");
-  const [lower, setLower] = useState("");
+  const {
+    url,
+    setUrl,
+    picture,
+    setPicture,
+    upperWording,
+    setUpperWording,
+    lowerWording,
+    setLowerWording,
+    upper,
+    setUpper,
+    lower,
+    setLower,
+  } = useContext(MemeContext);
 
   const handleSubmit = (event) => {
     event.preventDefault();
